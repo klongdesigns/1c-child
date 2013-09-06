@@ -33,7 +33,9 @@ if( $browser->getBrowser() == Browser::BROWSER_SAFARI or $browser->getBrowser() 
 <body>
 <div id="container">
     <header class="row">
-        <?php /*
+        <?php 
+		// To use the top bar menu, uncomment this line of code.
+		/*
 		<nav class="top-bar">
 		  <ul class="title-area">
 			<!-- Title Area -->
