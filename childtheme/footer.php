@@ -5,9 +5,8 @@
 <?php wp_footer(); ?>
 <?php // echo stripslashes(get_option('oc_footer_code')); ?>
 <script>
-jQuery(document).foundation();
 (function($) {
-
+$(document).foundation();
 
 $(document).ready(function() {
 <?php /*
