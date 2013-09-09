@@ -6,11 +6,9 @@
 function remove_cornerstone_actions() {
 	remove_action('wp_enqueue_scripts', 'load_cornerstone_scripts',0);
 	remove_action('init', 'Orbit');
-	unregister_nav_menu( 'header-menu-left' );
-	unregister_nav_menu( 'header-menu-right' );
-	unregister_nav_menu( 'footer-menu' );
+	remove_action('init', 'cornerstone_menus');
 }
-add_action('after_setup_theme','remove_cornerstone_actions');
+add_action('after_setup_theme','remove_cornerstone_actions', 10);
 
 
 function load_1call_scripts() {
