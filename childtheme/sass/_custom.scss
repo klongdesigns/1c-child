@@ -1,11 +1,11 @@
 // Calculate rems
 @function remCalc($pxWidth) {
-  @return $pxWidth / $em-base * 1rem;
+  @return #{$pxWidth / $em-base}rem;
 }
 
 //Mixin to return rems with px fallback
 @mixin rem($style, $pxWidth){
-  #{$style}:$pxWidth;
+  #{$style}: #{$pxWidth}px;
   #{$style}:remCalc($pxWidth);
 }
 
