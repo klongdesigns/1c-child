@@ -77,6 +77,8 @@ $theme_options = array (
 ######################################################################
 # SETTINGS BOX - HEADER SETTINGS
 ######################################################################
+
+/*
 	array( "name" => "Header Options", "type" => "section"),
 	array( "type" => "open"),
 		
@@ -129,6 +131,7 @@ $theme_options = array (
 			"std" => ""),
 
 	array( "type" => "close"),
+	*/
 
 
 
