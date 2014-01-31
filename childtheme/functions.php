@@ -56,8 +56,9 @@ function load_1call_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'load_1call_scripts',0);
-
-add_filter('show_admin_bar', '__return_false');
+if(is_user_logged_in()) {
+add_filter('show_admin_bar', '__return_true');
+}
 
 
 /*****************************************

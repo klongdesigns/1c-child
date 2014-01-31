@@ -193,6 +193,7 @@ function onecall_lock() {
 		//remove_submenu_page('themes.php', 'widgets.php');
 		remove_submenu_page('themes.php', 'themes.php');
 		remove_submenu_page('index.php', 'update-core.php');
+		remove_submenu_page('themes.php', 'customize.php');
 	}
 }
 
